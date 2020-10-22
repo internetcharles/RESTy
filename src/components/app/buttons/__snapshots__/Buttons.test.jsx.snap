@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buttons component renders buttons 1`] = `
+<DocumentFragment>
+  <div>
+    <input
+      name="get"
+      type="radio"
+      value="GET"
+    />
+    <input
+      name="post"
+      type="radio"
+      value="POST"
+    />
+    <input
+      name="put"
+      type="radio"
+      value="PUT"
+    />
+    <input
+      name="delete"
+      type="radio"
+      value="DELETE"
+    />
+    <textarea
+      name="data"
+    />
+  </div>
+</DocumentFragment>
+`;

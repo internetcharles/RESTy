@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './Header';
+import Buttons from './buttons/Buttons';
 
 export default function App() {
-  return <Header />;
+  return <Buttons />;
 }

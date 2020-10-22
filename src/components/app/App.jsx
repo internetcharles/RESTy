@@ -1,6 +1,6 @@
 import React from 'react';
-import Buttons from './buttons/Buttons';
+import Resty from '../../containers/Resty';
 
 export default function App() {
-  return <Buttons />;
+  return <Resty />;
 }

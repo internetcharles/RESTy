@@ -7,6 +7,7 @@ describe('Buttons component', () => {
   it('renders buttons', () => {
     const { asFragment } = render(<Buttons
       onChange={() => {}}
+      onTextChange={() => {}}
     />);
     expect(asFragment()).toMatchSnapshot();
   });

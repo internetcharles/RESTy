@@ -3,26 +3,32 @@
 exports[`Buttons component renders buttons 1`] = `
 <DocumentFragment>
   <div>
-    <input
-      name="get"
-      type="radio"
-      value="GET"
-    />
-    <input
-      name="post"
-      type="radio"
-      value="POST"
-    />
-    <input
-      name="put"
-      type="radio"
-      value="PUT"
-    />
-    <input
-      name="delete"
-      type="radio"
-      value="DELETE"
-    />
+    <form>
+      <input
+        name="api"
+        type="radio"
+        value="GET"
+      />
+       GET
+      <input
+        name="api"
+        type="radio"
+        value="POST"
+      />
+       POST
+      <input
+        name="api"
+        type="radio"
+        value="PUT"
+      />
+       PUT
+      <input
+        name="api"
+        type="radio"
+        value="DELETE"
+      />
+       DELETE
+    </form>
     <textarea
       name="data"
     />

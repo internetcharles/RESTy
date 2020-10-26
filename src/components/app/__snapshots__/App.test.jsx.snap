@@ -52,6 +52,9 @@ exports[`App component renders App 1`] = `
         name="data"
       />
     </div>
+    <figure>
+      <span />
+    </figure>
   </div>
 </DocumentFragment>
 `;

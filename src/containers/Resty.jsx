@@ -30,6 +30,7 @@ export default class Resty extends Component {
     this.setState({
       text: target.value
     });
+    console.log(this.state.text);
   }
 
   makeRequest = async() => {
@@ -39,21 +40,17 @@ export default class Resty extends Component {
       this.setState({
         results: parsedData
       });
+      this.setState({ history: this.state.history.push(this.state.url) });
     }
-    // else if(this.state.request === 'POST') {
-    //   request.post(`${this.state.url}`)
-    //     .set('Content-Type', 'application/json')
-    //     .send(JSON.stringify(this.state.text))
-    //     .then(res => this.setState({ results: res }));
-    // }
-    // else if(this.state.request === 'PUT') {
-
-    // }  
-
+    else if(this.state.request === 'POST') {
+      request.post(`${this.state.url}`)
+        .set('Content-Type', 'application/json')
+        .type('form')
+        .send(this.state.text)
+        .then(res => this.setState({ results: res.body }));
+      this.setState({ history: this.state.history.push(this.state.url) });
+    }
   }
-
-
-
 
   render() {
     const { results } = this.state;
